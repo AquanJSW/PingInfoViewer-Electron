@@ -12,4 +12,4 @@ No yet completed, but works.
 
 # TODO
 
-- Only works on Window.
+- Only works on Windows but Linux...
