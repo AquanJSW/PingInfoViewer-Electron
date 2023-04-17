@@ -1,0 +1,66 @@
+{
+    "name": "pinginfoviewer-electron",
+    "productName": "PingInfoViewer-Electron",
+    "version": "1.0.0",
+    "description": "A Electron Version PingInfoViewer",
+    "main": ".webpack/main",
+    "scripts": {
+        "start": "cross-env ELECTRON_ENV=development DISPLAY=:12.0 electron-forge start --inspect-electron",
+        "package": "electron-forge package",
+        "make": "electron-forge make",
+        "publish": "electron-forge publish",
+        "lint": "eslint --ext .ts,.tsx,.jsx",
+        "test": "npx ts-node --files src/test/ping.ts"
+    },
+    "keywords": [],
+    "author": {
+        "name": "zaelggk",
+        "email": "zhdlcc@gmail.com"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@electron-forge/cli": "^6.1.1",
+        "@electron-forge/maker-deb": "^6.1.1",
+        "@electron-forge/maker-rpm": "^6.1.1",
+        "@electron-forge/maker-squirrel": "^6.1.1",
+        "@electron-forge/maker-zip": "^6.1.1",
+        "@electron-forge/plugin-webpack": "^6.1.1",
+        "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
+        "@tanstack/react-table": "^8.8.5",
+        "@tanstack/react-virtual": "^3.0.0-alpha.0",
+        "@types/react": "^18.0.33",
+        "@types/react-dom": "^18.0.11",
+        "@typescript-eslint/eslint-plugin": "^5.0.0",
+        "@typescript-eslint/parser": "^5.0.0",
+        "@vercel/webpack-asset-relocator-loader": "1.7.3",
+        "cross-env": "^7.0.3",
+        "css-loader": "^6.7.3",
+        "electron": "24.0.0",
+        "electron-devtools-installer": "^3.2.0",
+        "electron-store": "^8.1.0",
+        "eslint": "^8.0.1",
+        "eslint-plugin-import": "^2.25.0",
+        "fork-ts-checker-webpack-plugin": "^7.2.13",
+        "ipaddr.js": "^2.0.1",
+        "net-ping": "^1.2.3",
+        "node-loader": "^2.0.0",
+        "prettier": "^2.8.7",
+        "react": "^18.2.0",
+        "react-refresh": "^0.14.0",
+        "sass": "^1.61.0",
+        "sass-loader": "^13.2.2",
+        "style-loader": "^3.3.2",
+        "ts-loader": "^9.2.2",
+        "ts-node": "^10.0.0",
+        "typescript": "~4.5.4"
+    },
+    "dependencies": {
+        "electron-squirrel-startup": "^1.0.0",
+        "net-ping": "*",
+        "raw-socket": "*",
+        "react-dom": "^18.2.0"
+    },
+    "resolutions": {
+        "nan": "github:jkleinsc/nan#remove_accessor_signature"
+    }
+}

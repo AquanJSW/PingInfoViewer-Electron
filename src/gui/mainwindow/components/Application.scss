@@ -1,0 +1,23 @@
+html {
+    overflow: auto;
+    background-color: #1e1e1e;
+    color: hsl(0, 0%, 85%);
+    height: 100%;
+}
+
+table {
+    height: 100%;
+}
+
+thead > tr > th {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+tbody {
+    overflow: auto;
+    white-space: pre;
+    text-align: right;
+    text-overflow: ellipsis;
+    height: 100%;
+}

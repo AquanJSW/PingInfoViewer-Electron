@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "target": "es2017",
+        "allowJs": true,
+        "module": "commonjs",
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "outDir": "dist",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ],
+            "@core": ["./src/core"],
+            "@utils": ["./src/utils.ts"],
+            "@configdialog": ["./src/gui/configdialog"]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

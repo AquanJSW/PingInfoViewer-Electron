@@ -1,0 +1,68 @@
+@import "../../Global.scss";
+
+html {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--body-background-color);
+    color: var(--body-color);
+}
+
+label {
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 3px 0;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    font-family: "Cascadia Mono", "DejaVu Sans Mono", monospace;
+    background-color: #15181d;
+    color: white;
+
+    :focus {
+        outline: none !important;
+        border: 1px solid black;
+        outline: auto;
+        outline-color: black;
+    }
+}
+
+#footerButtons {
+    float: right;
+}
+
+button {
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    text-shadow: 0px 0px rgb(0, 0, 0);
+    font-weight: normal;
+    border-radius: 5px;
+    border: 1px solid #484747;
+    margin: 0 2px 0 2px;
+    padding: 0.3rem 0.5rem;
+    min-width: 50px;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    display: inline-flex;
+
+    &:hover {
+        background-color: #747474;
+    }
+
+    &:active {
+        background-color: #484747;
+    }
+}
+
+
+// label + textarea {
+//     margin-top: 5px;
+// }
